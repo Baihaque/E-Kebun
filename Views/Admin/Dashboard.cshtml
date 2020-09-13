@@ -1,0 +1,87 @@
+﻿@{
+    ViewData["Title"] = "Dashboard";
+}
+<h2>@ViewData["Title"]</h2>
+
+
+
+<h3>Users</h3>
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Email</th>
+            <th>Contact Number</th>
+            <th>Address</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>John</td>
+            <td>Doe</td>
+            <td>john@example.com</td>
+            <td>0123456789</td>
+            <td>KL</td>
+            <td>Edit|View|Delete</td>
+
+        </tr>
+        <tr>
+            <td>Mary</td>
+            <td>Moe</td>
+            <td>mary@example.com</td>
+            <td>0123654789</td>
+            <td>Selangor</td>
+            <td>Edit|View|Delete</td>
+        </tr>
+        <tr>
+            <td>July</td>
+            <td>Dooley</td>
+            <td>july@example.com</td>
+            <td>0198745632</td>
+            <td>Perak</td>
+            <td>Edit|View|Delete</td>
+        </tr>
+    </tbody>
+</table>
+
+<h3>Job Advertisement</h3>
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>JobID</th>
+            <th>JobName</th>
+            <th>JobOwner</th>
+            <th>JobAddress</th>
+            <th>JobDesc</th>
+            <th>JobSalary</th>
+            <th>JobWorkingHours</th>
+            <th>JobQualification</th>
+            <th>JobType</th>
+            <th>JobAdditionalInformation</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>1</th>
+            <th>Mango Plucker</th>
+            <th>Mango Farm</th>
+            <th>KL</th>
+            <th>Pluck the Mango</th>
+            <th>RM900</th>
+            <th>9hrs per day</th>
+            <th>SPM</th>
+            <th>Part-Time</th>
+            <th>Must be punctual</th>
+            <td>Edit|View|Delete</td>
+        </tr>
+    </tbody>
+</table>

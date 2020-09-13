@@ -1,0 +1,73 @@
+﻿@model EKebun.Models.Job
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h2>Create</h2>
+
+<h4>Job</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="JobName" class="control-label"></label>
+                <input asp-for="JobName" class="form-control" />
+                <span asp-validation-for="JobName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="JobOwnerCompanyName" class="control-label"></label>
+                <input asp-for="JobOwnerCompanyName" class="form-control" />
+                <span asp-validation-for="JobOwnerCompanyName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="JobAddress" class="control-label"></label>
+                <input asp-for="JobAddress" class="form-control" />
+                <span asp-validation-for="JobAddress" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="JobDesc" class="control-label"></label>
+                <input asp-for="JobDesc" class="form-control" />
+                <span asp-validation-for="JobDesc" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="JobSalary" class="control-label"></label>
+                <input asp-for="JobSalary" class="form-control" />
+                <span asp-validation-for="JobSalary" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="JobWorkingHours" class="control-label"></label>
+                <input asp-for="JobWorkingHours" class="form-control" />
+                <span asp-validation-for="JobWorkingHours" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="JobQualification" class="control-label"></label>
+                <input asp-for="JobQualification" class="form-control" />
+                <span asp-validation-for="JobQualification" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="JobType" class="control-label"></label>
+                <input asp-for="JobType" class="form-control" />
+                <span asp-validation-for="JobType" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="JobAdditionalInformation" class="control-label"></label>
+                <input asp-for="JobAdditionalInformation" class="form-control" />
+                <span asp-validation-for="JobAdditionalInformation" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

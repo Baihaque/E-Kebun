@@ -1,0 +1,85 @@
+﻿@{
+    ViewData["Title"] = "Dashboard";
+}
+<h2>@ViewData["Title"]</h2>
+
+
+<div class="form-group avatar container">
+    <center>
+        <figure class="figure col-md-12">
+            <img class="img-responsive" src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="" style="width:200px; height:200px;">
+        </figure>
+        <p>User Name</p>
+    </center>
+
+</div>
+
+<div>
+    <h3>Search Job</h3>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>JobName</th>
+                <th>JobAddress</th>
+                <th>JobDesc</th>
+                <th>JobSalary</th>
+                <th>JobWorkingHours</th>
+                <th>JobQualification</th>
+                <th>JobType</th>
+                <th>JobAdditionalInformation</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Mango Plucker</td>
+                <td>KL</td>
+                <td>Pluck the Mango</td>
+                <td>RM900</td>
+                <td>9hrs per day</td>
+                <td>SPM</td>
+                <td>Part-Time</td>
+                <td>Must be punctual</td>
+                <td>Apply</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<hr />
+<div>
+    <h3>Job Application</h3>
+    <p>
+        <a asp-action="Create">Create New</a>
+    </p>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>JobName</th>
+                <th>JobAddress</th>
+                <th>JobDesc</th>
+                <th>JobSalary</th>
+                <th>JobWorkingHours</th>
+                <th>JobQualification</th>
+                <th>JobType</th>
+                <th>JobAdditionalInformation</th>
+                <th>Status</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Mango Plucker</td>
+                <td>KL</td>
+                <td>Pluck the Mango</td>
+                <td>RM900</td>
+                <td>9hrs per day</td>
+                <td>SPM</td>
+                <td>Part-Time</td>
+                <td>Must be punctual</td>
+                <td>Accepted|Pending|Rejected</td>
+                <td>View</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

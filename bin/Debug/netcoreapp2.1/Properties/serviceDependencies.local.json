@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "mssql1": {
+      "type": "mssql.local",
+      "connectionId": "EKebunNewContextConnection"
+    },
+    "mssql2": {
+      "type": "mssql.local",
+      "connectionId": "EKebunContext"
+    },
+    "mssql3": {
+      "type": "mssql.local",
+      "connectionId": "EKebunJobContext"
+    }
+  }
+}
